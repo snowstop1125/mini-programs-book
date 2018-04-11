@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/member/member",
+    "pages/cart/cart",
+    
+    "pages/search/search",
+    "pages/category/category",
+    "pages/logs/logs"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTitleText": "图书",
+    "navigationBarTextStyle": "black"
+  }
+  
+}

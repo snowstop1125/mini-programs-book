@@ -1,0 +1,199 @@
+@import "path/to/zanui-weapp/dist/index.wxss";
+
+
+/**app.wxss**/
+page{
+  background: #f7f7f7;
+}
+view{
+  color: #666;
+  font-size: 28rpx;
+}
+image{
+  width:100%;
+  display:block;
+}
+p{
+  display: block;
+}
+.red{
+  color: #d74a45;
+}
+.del{
+  text-decoration: line-through;
+  color: #999;
+  font-size: 25rpx;
+}
+.center{
+  text-align: center
+}
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.flex{
+  display: flex;
+}
+.xy-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.container.hasTopbar {
+  margin-top: 90rpx;
+} 
+.section{
+  background: #fff;
+}
+.section-b{
+  border-bottom:1px solid #eee;
+}
+/* 省略号  */
+.slh{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.dslh{
+  display: -webkit-box;
+  white-space:normal;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+.index-head{
+  display: flex;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:2;
+  height:90rpx;
+} 
+.index-head.noTop{
+  background:#fff;
+  border-bottom:1px solid #eee;
+  transition: .5s all ease;
+}
+.index-head.noTop .toClassify{
+  box-shadow: 0px 0px 0px rgba(0, 0, 0,0);
+}
+.index-head.noTop .toClassify image{
+  width:70%;
+  transition: .1s all ease;
+  margin-top:10rpx;
+}
+.index-head.noTop .search{
+  box-shadow: 0px 0px 0px rgba(0, 0, 0,0);
+  background:#f7f7f7;
+}
+.index-head .toClassify{
+  margin:15rpx 20rpx 0;
+  background: rgba(255, 255, 255,.7);
+  box-shadow:0px 1px 2px rgba(0, 0, 0,.5);
+  width: 60rpx;
+  height: 60rpx;
+  line-height:60rpx;
+  border-radius: 50%;
+}
+.index-head .toClassify image{
+  width:50%;
+  margin:16rpx auto 0;
+}
+.index-head .search{
+  font-size: 26rpx;
+  background: rgba(255, 255, 255,.7);
+  border-radius: 50px;
+  width:77%;
+  height:60rpx;
+  margin-top:15rpx;
+  padding:0 40rpx 0 0rpx;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0,.5);
+  display: flex;
+  color: #666;
+}
+.index-head .search image{
+  width:35rpx;
+  margin:15rpx 10rpx 0 20rpx;
+}
+.index-head .search input{
+  height: 100%;
+  width:100%;
+}
+/*scroll-Y 样式  */
+.scroll-box .scrollX-view{
+  white-space: nowrap;
+  overflow: hidden;
+  width:100%;
+}
+.scroll-box .scrollX-item{
+  display: inline-block;
+  margin-right: 10rpx;
+}
+.scroll-box .scrollX-item navigator{
+  height: 100%;
+}
+
+.gotopBtn{
+  position: fixed;
+  bottom:50rpx;
+  right: 25rpx;
+  width:65rpx;
+  height: 65rpx;
+  background: rgba(255, 255, 255, .5);
+  border-radius: 50%;
+  border: 1px solid #999;
+  overflow: hidden;
+}
+.gotopBtn image{
+  width: 80%;
+  margin:4rpx auto 0;
+}
+
+/*  重写 checkbox 样式  */
+checkbox .wx-checkbox-input{
+   border-radius: 50%;
+   width: 40rpx;
+   height: 40rpx;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+   border-color: #d74a45;
+   background: #d74a45;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+   border-radius: 50%;
+   width: 40rpx;
+   height: 40rpx;
+   line-height: 40rpx;
+   text-align: center;
+   font-size:30rpx;
+   color:#fff;
+   background: transparent;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}
+
+.price{
+  color: #d74a45;
+}
+.topline{
+  position: fixed;
+  width: 100%;
+  height: 1px;
+  background: #eee;
+  top: 0;
+  left: 0;
+  z-index:1000;
+
+}
+.r-arrow{
+  width: 12rpx;
+  display: inline-block;
+  vertical-align:middle;
+
+}
