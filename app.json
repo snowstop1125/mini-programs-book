@@ -11,9 +11,9 @@
   ],
   "window": {
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "white",
+    "navigationBarBackgroundColor": "#fd6e70",
     "navigationBarTitleText": "图书",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   }
   
 }

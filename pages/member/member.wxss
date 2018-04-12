@@ -1,6 +1,6 @@
 /* pages/member/member.wxss */
 .member-head{
-  background:#d74a45;
+  background:#fd6e70;
   color: #fff;
   height: 300rpx;
   display: flex;

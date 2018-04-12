@@ -1,29 +1,29 @@
 <!--index.wxml-->
 <view class="wrap">
-  <view class="section section-b">
-    <view class="nav">
-      <ul>
-        <block wx:for="{{nav}}">
-          <li>
-            <navigator url='{{item.navLink}}'>
-              <image src="{{item.navImg}}"/>
-              <p>{{item.navTxt}}</p>
-            </navigator>
-          </li>
-        </block>
-      </ul>
-    </view>
+    <view class="clause" bindtap='clauseModal'><b>?</b> 借书条款</view>
+    <view class="wrap-center">
+      <!-- <view class="ad-img">
+         <image src="{{adImg.imgSrc}}" mode="widthFix"/>  
+      </view> -->
 
-    <view class="ad-img">
-      <navigator url='{{adImg.imgLink}}' hover-class="none">
-        <image src="{{adImg.imgSrc}}" mode="widthFix"/>
+      <view class="borrowbook-btn" bindtap='scanCode'>
+        <image src="../../path/to/public/image/index-scan.png" mode="widthFix"/>
+        <text>我要借书</text>
+      </view>
+
+    </view>
+    <view class="tabBar {{isIpx?'fix-iphonex-button':''}}">
+      <navigator class="act" hover-class='none'>
+        <image src="../../path/to/public/image/tabBar0-act.png" mode="widthFix"/>
+        <text>首页</text>
+      </navigator>
+      <navigator hover-class='none'>
+        <image src="../../path/to/public/image/tabBar1.png" mode="widthFix"/>
+        <text>书籍推荐</text>
+      </navigator>
+      <navigator url='../member/member' hover-class='none'>
+        <image src="../../path/to/public/image/tabBar2.png" mode="widthFix"/>
+        <text>我的</text>
       </navigator>
     </view>
-  </view>
-    
-
-</view>
-
-<view class="gotopBtn" bindtap="goTop" wx:if="{{showTop}}">
-  <image src='../../path/to/public/image/top.png' mode="widthFix"/>
 </view>

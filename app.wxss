@@ -17,7 +17,7 @@ p{
   display: block;
 }
 .red{
-  color: #d74a45;
+  color: #fd6e70;
 }
 .del{
   text-decoration: line-through;

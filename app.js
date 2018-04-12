@@ -31,9 +31,17 @@ App({
           })
         }
       }
+    }),
+    wx.getSystemInfo({
+      success: res => {
+        if (res.model.indexOf('iPhone X')!=-1){
+          this.globalData.isIpx = true;
+        }
+      }
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    isIpx:false
   }
 })
