@@ -1,11 +1,13 @@
 // pages/member/member.js
+const app = getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    isIpx: app.globalData.isIpx ? true : false,
   },
 
   /**

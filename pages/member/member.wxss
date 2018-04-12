@@ -10,7 +10,10 @@
   background: #fff;
   width:80%;
   color: #999;
-  bottom: 70rpx;
+  bottom: 50rpx;
   left: 50%;
   transform: translateX(-50%);
+}
+.logout.fix-iphonex-button{
+  bottom: 100rpx;
 }
