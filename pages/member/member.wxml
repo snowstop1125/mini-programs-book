@@ -34,5 +34,5 @@
           </view>
         </navigator>
     </view>
-
+    <button class="logout" bindtap="">注销</button>
   </view>
