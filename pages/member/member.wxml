@@ -1,8 +1,38 @@
 <!--pages/member/member.wxml-->
+<view class="wrap">
 
-<view class="member-head">
-  <view class="user-pic">
-    <image src=""/>
+  <view class="member-head">
+    <view class="user-pic">
+      <image src=""/>
+    </view>
   </view>
 
-</view>
+  <view class="ls-cell-group">
+      <view class="ls-cell">
+        <navigator>
+          我的消息
+          <view class="xy-center ls-cell-r">
+            <b>13</b>
+            <image class="r-arrow" src='../../path/to/public/image/right-arrow.png' mode='widthFix'/>
+          </view>
+        </navigator>
+      </view>
+      <view class="ls-cell">
+        <navigator>
+          借阅记录
+          <view class="xy-center ls-cell-r">
+            <image class="r-arrow" src='../../path/to/public/image/right-arrow.png' mode='widthFix'/>
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view class="ls-cell">
+        <navigator>
+          微信绑定
+          <view class="xy-center ls-cell-r">
+            <image class="r-arrow" src='../../path/to/public/image/right-arrow.png' mode='widthFix'/>
+          </view>
+        </navigator>
+    </view>
+
+  </view>
