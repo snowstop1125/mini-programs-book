@@ -36,6 +36,12 @@ p{
 .flex{
   display: flex;
 }
+.pr{
+  position: relative;
+}
+.bold{
+  font-weight: bold;
+}
 .xy-center{
   display: flex;
   justify-content: center;
@@ -202,7 +208,7 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
 .ls-cell{
   background: #fff;
   width:100%;
-  height:90rpx;
+  height:95rpx;
   font-size:30rpx;
   margin-bottom:30rpx;
   border-bottom:1px solid #f7f7f7;
@@ -212,7 +218,15 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
   justify-content: space-between;
   align-items: center;
   height:100%;
-  padding: 0 30rpx;
+  padding: 0 45rpx;
+}
+.ls-cell .ls-cell-l{
+  display: flex;
+  align-items: center;
+}
+.ls-cell .ls-cell-l image{
+  width: 40rpx;
+  margin-right: 20rpx;
 }
 .ls-cell .ls-cell-r b{
   margin-right: 20rpx;
@@ -221,6 +235,10 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
   padding:0 15rpx;
   border-radius:40rpx;
   font-size: 22rpx;
+}
+.ls-cell .r-arrow{
+  width:14rpx;
+  filter:brightness(60%);
 }
 .ls-cell-group{
   margin-bottom:30rpx;
@@ -238,7 +256,7 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
   background:#f7f7f7;
   position: absolute;
   bottom:-1px;
-  left:30rpx;
+  left:45rpx;
   z-index: 2
 }
 .ls-cell-group .ls-cell:last-child::after{

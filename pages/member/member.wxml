@@ -2,15 +2,47 @@
 <view class="wrap">
 
   <view class="member-head">
-    <view class="user-pic">
-      <image src=""/>
+    <view class="user-pic" bindtap="chooseImage">
+      <image src="{{userInfo.userPic || '../../path/to/public/image/member-pic.png'}}" mode="widthFix"/>
+    </view>
+    <text class="user-name">{{userInfo.userName}}</text>
+    <navigator class="member-head-btn m-btn-l">
+      <view class="pr">
+        <image src="../../path/to/public/image/member-medal.png" mode='widthFix'/>
+        <b class="num">13</b>
+      </view>
+    </navigator>
+    <navigator class="member-head-btn m-btn-r">
+      <view class="pr">
+        <image src="../../path/to/public/image/member-set.png" mode='widthFix'/>
+      </view>
+    </navigator>
+
+    <view class="member-head-nav">
+      <navigator class="nav-item" hover-class='none'>
+        <image src="../../path/to/public/image/member-deposit.png" mode='widthFix'/>
+        <view class="nav-item-r">
+          <text>押金</text>
+          <view class="bold"><i>￥</i>200.00</view>
+        </view>
+      </navigator>
+      <navigator class="nav-item" hover-class='none'>
+        <image src="../../path/to/public/image/member-borrow.png" mode='widthFix'/>
+        <view class="nav-item-r">
+          <text>借阅中</text>
+          <view class="bold">3本</view>
+        </view>
+      </navigator>
     </view>
   </view>
 
-  <view class="ls-cell-group">
+  <view class="ls-cell-group member-cell">
       <view class="ls-cell">
         <navigator>
-          我的消息
+          <view class="ls-cell-l">
+            <image src="../../path/to/public/image/cell-icon-msg.png" mode='widthFix'/>
+            我的消息
+          </view>
           <view class="xy-center ls-cell-r">
             <b>13</b>
             <image class="r-arrow" src='../../path/to/public/image/right-arrow.png' mode='widthFix'/>
@@ -19,7 +51,10 @@
       </view>
       <view class="ls-cell">
         <navigator>
-          借阅记录
+          <view class="ls-cell-l">
+            <image src="../../path/to/public/image/cell-icon-msg.png" mode='widthFix'/>
+            借阅记录
+          </view>
           <view class="xy-center ls-cell-r">
             <image class="r-arrow" src='../../path/to/public/image/right-arrow.png' mode='widthFix'/>
           </view>
@@ -28,11 +63,14 @@
     </view>
     <view class="ls-cell">
         <navigator>
-          微信绑定
+          <view class="ls-cell-l">
+            <image src="../../path/to/public/image/cell-icon-msg.png" mode='widthFix'/>
+            微信绑定
+          </view>
           <view class="xy-center ls-cell-r">
             <image class="r-arrow" src='../../path/to/public/image/right-arrow.png' mode='widthFix'/>
           </view>
         </navigator>
     </view>
-    <button class="logout  {{isIpx?'fix-iphonex-button':''}}" bindtap="">注销</button>
+    <button class="logout {{isIpx?'fix-iphonex-button':''}}" bindtap="">注销</button>
   </view>
