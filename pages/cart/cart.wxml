@@ -11,7 +11,7 @@
           <navigator url="" hover-class='none' class="flex">
             {{item.shopName}}
             <view class="xy-center">
-              <image class="r-arrow" src='../../path/to/public/image/right-arrow.png' mode='widthFix'/>
+              <image class="r-arrow" src='../../assets/image/right-arrow.png' mode='widthFix'/>
             </view>
           </navigator>
         </view>
@@ -26,7 +26,7 @@
                 <navigator url="" hover-class='none' class="flex">
                   去凑单
                   <view class="xy-center">
-                    <image class="r-arrow" src='../../path/to/public/image/right-arrow.png' mode='widthFix'/>
+                    <image class="r-arrow" src='../../assets/image/right-arrow.png' mode='widthFix'/>
                   </view>
                 </navigator>
               </view>

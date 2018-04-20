@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/member/member",
+    "pages/member/index/index",
     "pages/index/index",
     
     "pages/cart/cart",

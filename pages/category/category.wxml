@@ -5,7 +5,7 @@
   <!--topbar-->
   <view class="index-head noTop">
     <view class="search" bindtap="toSearchPage">
-      <image src="../../path/to/public/image/topbar-search.png" mode="widthFix"/>
+      <image src="../../assets/image/topbar-search.png" mode="widthFix"/>
       <input placeholder-style="color:#999;" confirm-type="search" placeholder="搜索" disabled="true"/>
     </view>
   </view>

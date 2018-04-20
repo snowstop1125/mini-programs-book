@@ -2,11 +2,11 @@
   <!--topbar-->
   <view class="index-head noTop">
     <view class="search" >
-      <image src="../../path/to/public/image/topbar-search.png" mode="widthFix"/>
+      <image src="../../assets/image/topbar-search.png" mode="widthFix"/>
       <input placeholder-style="color:#999;" confirm-type="search" placeholder="搜索" focus="true"/>
     </view>
      <view class="toClassify">
-      <image src="../../path/to/public/image/topbar-cancel.png" mode="widthFix" bindtap='goBack'/>
+      <image src="../../assets/image/topbar-cancel.png" mode="widthFix" bindtap='goBack'/>
     </view>
   </view>
   <view class="container hasTopbar">

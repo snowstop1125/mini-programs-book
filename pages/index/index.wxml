@@ -7,22 +7,22 @@
       </view> -->
 
       <view class="borrowbook-btn" bindtap='scanCode'>
-        <image src="../../path/to/public/image/index-scan.png" mode="widthFix"/>
+        <image src="../../assets/image/index-scan.png" mode="widthFix"/>
         <text>我要借书</text>
       </view>
 
     </view>
     <view class="tabBar {{isIpx?'fix-iphonex-button':''}}">
       <navigator class="act" hover-class='none'>
-        <image src="../../path/to/public/image/tabBar0-act.png" mode="widthFix"/>
+        <image src="../../assets/image/tabBar0-act.png" mode="widthFix"/>
         <text>首页</text>
       </navigator>
       <navigator hover-class='none'>
-        <image src="../../path/to/public/image/tabBar1.png" mode="widthFix"/>
+        <image src="../../assets/image/tabBar1.png" mode="widthFix"/>
         <text>书籍推荐</text>
       </navigator>
       <navigator url='../member/member' hover-class='none'>
-        <image src="../../path/to/public/image/tabBar2.png" mode="widthFix"/>
+        <image src="../../assets/image/tabBar2.png" mode="widthFix"/>
         <text>我的</text>
       </navigator>
     </view>
