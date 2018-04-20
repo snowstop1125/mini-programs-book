@@ -21,7 +21,7 @@
         <image src="../../assets/image/tabBar1.png" mode="widthFix"/>
         <text>书籍推荐</text>
       </navigator>
-      <navigator url='../member/member' hover-class='none'>
+      <navigator url='../member/index' hover-class='none'>
         <image src="../../assets/image/tabBar2.png" mode="widthFix"/>
         <text>我的</text>
       </navigator>
